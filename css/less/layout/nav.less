@@ -1,0 +1,109 @@
+
+.navbar {
+	margin-top: 2rem;
+	.navbar-nav {
+    display: inline-block;
+    float: none;
+	}
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.nav {
+	li {
+		a{
+			text-transform: uppercase;
+			padding: 1rem 3rem;
+			border-radius: 50%;
+			letter-spacing: 1px;
+			.transition(all 0.2s ease-in-out);
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}
+	em{
+		display: block;
+		font-size: 1.2rem;
+		font-family: @headings-font-family;
+		text-transform: none;
+		font-weight: 500;
+
+	}
+}
+
+
+ /* All Mobile Sizes to 767(devices and browser) */
+	@media only screen and (max-width: @screen-xs-max) { 
+		.navbar {
+			margin-top: -4.5rem;
+		}
+
+		.nav {
+			li{
+				display: inline-block;
+				a{
+					padding: 1rem 1rem;
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.navbar-toggle {
+			border: 1px solid @brand-ltGray;
+			.icon-bar{
+				background: @brand-ltGray;
+			}
+		}
+
+	}
+
+	/* Smaller than standard 991 (devices and browsers) */
+	@media only screen and (max-width: @screen-sm-max) {
+	
+	.nav {
+		li{
+			display: block;
+			
+			a{
+				font-size: 1.4rem;
+				padding: 1rem 2rem;
+				}
+			}
+		}
+
+ 	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: @screen-xs-min) {
+		.navbar {
+			.navbar-collapse {
+				padding: 0
+			}
+			.navbar-nav {
+				margin: 0;
+				display: block;
+			}
+		}
+		.nav {
+			li{
+				display: block;
+				
+				a{
+					padding: 1rem .5rem;
+					border-radius: 0;
+					border-bottom: 1px solid #ddd;
+					background: @brand-primary;
+					color: @white;
+					&:hover{
+						color: @brand-primary;
+					}
+				}
+			}
+			em{
+				display: inline-block;
+				margin-right: .5rem;
+			}
+		}
+	}	

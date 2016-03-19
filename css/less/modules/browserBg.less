@@ -1,0 +1,231 @@
+.designs-templates {
+  max-width: 102%;
+  padding-bottom: 69px;
+  margin-left: -2%;
+}
+
+.designs-template {
+  position: relative;
+  margin-left: 2%;
+  margin-bottom: 2.3%;
+  float: left;
+  width: 23%;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .3s;
+  -webkit-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition-property: opacity;
+  -moz-transition-duration: .3s;
+  -moz-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition-property: opacity;
+  -ms-transition-duration: .3s;
+  -ms-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -o-transition-property: opacity;
+  -o-transition-duration: .3s;
+  -o-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  transition-property: opacity;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+}
+.designs-template .browser {
+  padding-bottom: 70%;
+}
+
+
+.designs-template-image {
+  position: absolute;
+  width: 100%;
+}
+.designs-template-image.loading {
+  opacity: 0;
+}
+.designs-template-image:not(.loading) {
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition-property: opacity;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition-property: opacity;
+  -ms-transition-duration: .2s;
+  -ms-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -o-transition-property: opacity;
+  -o-transition-duration: .2s;
+  -o-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  transition-property: opacity;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+}
+.designs-customers .designs-template-image {
+  opacity: 1 !important;
+}
+.designs-template-info {
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition-property: background;
+  -webkit-transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition-property: background;
+  -moz-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition-property: background;
+  -ms-transition-duration: .2s;
+  -ms-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  -o-transition-property: background;
+  -o-transition-duration: .2s;
+  -o-transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+  transition-property: background;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(.694, .0482, .335, 1);
+}
+.designs-template-info .button {
+  opacity: 0;
+  -webkit-transition: opacity .3s cubic-bezier(.694, .0482, .335, 1), background .2s cubic-bezier(.694, .0482, .335, 1);
+  -moz-transition: opacity .3s cubic-bezier(.694, .0482, .335, 1), background .2s cubic-bezier(.694, .0482, .335, 1);
+  -o-transition: opacity .3s cubic-bezier(.694, .0482, .335, 1), background .2s cubic-bezier(.694, .0482, .335, 1);
+  -ms-transition: opacity .3s cubic-bezier(.694, .0482, .335, 1), background .2s cubic-bezier(.694, .0482, .335, 1);
+  transition: opacity .3s cubic-bezier(.694, .0482, .335, 1), background .2s cubic-bezier(.694, .0482, .335, 1);
+}
+.browser:hover .designs-template-info,
+.iphone:hover .designs-template-info {
+  background: #000;
+  background: rgba(0, 0, 0, .5);
+}
+.browser:hover .designs-template-info .button,
+.iphone:hover .designs-template-info .button {
+  opacity: 1;
+}
+
+.designs-template-mobile {
+  display: none;
+  padding: 10px 0;
+}
+
+/* ==========================================================================
+   Browser chrome with small and dark variations
+   ========================================================================== */
+.browser {
+  width: 785px;
+}
+.browser-bar {
+  border-radius: 3px 3px 0 0;
+  height: 21px;
+  font-size: 1px;
+  background-color: #e0e0e0;
+  line-height: 26px;
+}
+.browser-button {
+  display: inline-block;
+  height: 21px;
+  font-size: inherit;
+  margin-left: 6px;
+}
+.browser-button:first-child {
+  margin-left: 8px;
+}
+.browser-button:before {
+  content: "\25cf";
+  font-size: 9px;
+  line-height: 20px;
+  color: #7f7f7f;
+}
+.browser-content {
+  position: relative;
+  width: 100%;
+  height: 565px;
+  background-color: #fff;
+}
+.browser--small {
+  width: 400px;
+}
+.browser--small .browser-bar {
+  height: 11px;
+  line-height: 11px;
+}
+.browser--small .browser-button {
+  height: 11px;
+  margin-left: 5px;
+}
+.browser--small .browser-button:first-child {
+  margin-left: 7px;
+}
+.browser--small .browser-button:before {
+  line-height: 11px;
+  font-size: 5px;
+}
+.browser--small .browser-content {
+  height: 300px;
+}
+.browser--dark .browser-bar {
+  background-color: #383838;
+}
+.browser--dark .browser-button:before {
+  color: #181818;
+}
+.browser--fluid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60%;
+  /* TODO: 80% */
+  overflow: hidden;
+}
+.browser--fluid .browser-bar {
+  position: absolute;
+  width: 100%;
+}
+.browser--fluid .browser-content {
+  position: absolute;
+  top: 21px;
+  height: 100%;
+  overflow: hidden;
+}
+.browser--fluid.browser--small .browser-content {
+  top: 11px;
+}
+
+.browser--bottom.browser--small .browser-content img {
+  position: absolute;
+  bottom: 11px;
+}
+.browser--full {
+  padding-bottom: 0;
+  height: 100%;
+}
+.browser--full .browser-content {
+  height: 98%;
+}
+.browser--shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, .06) 0px 3px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, .06) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, .06) 0px 3px 10px;
+}
+
+.button--centered {
+position: absolute;
+top: 50%;
+left: 0;
+width: 100%;
+text-align: center;
+margin-top: -15px;
+}
+
+@media all and (max-width: 1700px) {
+  .designs-template {
+    width: 31.3%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .designs-templates {
+    margin-left: -3%;
+  }
+  .designs-template {
+    margin-bottom: 3.5%;
+    margin-left: 3%;
+    width: 47%;
+  }
+}

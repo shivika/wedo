@@ -1,0 +1,346 @@
+/* portfolio list */
+
+.portfolio {
+  padding: 1rem 0 0;
+    .list {
+        clear: both;
+        text-align: center; // new for centering thumbs
+        padding: 0;
+        li {
+          //float: left;
+          float: none;
+          margin: 20px 20px;
+          display: inline-block; // new for centering thumbs
+        }
+        .thumb {
+          position: relative;
+          width: 300px;
+          height: 220px;
+          //margin-bottom: 14px;
+          overflow: hidden;
+          display: inline-block; // new for centering thumbs
+          .box-shadow(rgba(0, 0, 0, .06) 0px 3px 7px);
+          &.tablet {
+            .box-shadow(none);
+          }
+          &:hover .view{
+             visibility: visible;
+              opacity: 1;
+              -webkit-transition-delay: 0s;
+              -moz-transition-delay: 0s;
+              -o-transition-delay: 0s;
+              transition-delay: 0s;
+          }
+          img {
+          max-width: 100%;
+          height: auto;
+          vertical-align: top;
+          }
+        }
+        .view {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: #fff;
+        background: rgba(255,255,255,0.8);
+        border: 1px solid #fff;
+        text-align: center;
+        line-height: 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.3s, visibility 0s linear .3s;
+        -moz-transition: opacity 0.3s, visibility 0s linear .3s;
+        -o-transition: opacity 0.3s, visibility 0s linear .3s;
+        transition: opacity 0.3s, visibility 0s linear .3s;
+        -webkit-transform: translate3d(0,0,0);
+        .button { 
+          position: relative;
+          top: 50%;
+          margin-top: -17px;
+          }         
+        }
+        h4 {
+          text-align: center; 
+          a {
+            text-decoration: none;
+          }
+        }
+        p {
+          text-align: center;
+          font-size: 12px;
+          line-height: 1.3em;
+        }
+    }
+    .colio-active-item h4 a {
+      background: #ccc;
+      padding: 2px 10px;
+    }
+}
+
+
+/* Colio - White Theme
+================================================== */
+
+
+/* container */
+
+.colio-theme-white {
+  margin-right: 20px;
+}
+
+.colio-theme-white .colio-container {
+  background: #eaeaea;
+  border: 1px solid #e0e0e0;
+}
+
+.colio-theme-white.colio-placement-before { margin-bottom: 0; }
+.colio-theme-white.colio-placement-before.colio-expanded {
+  margin-bottom: 20px;
+}
+
+/* colio close */
+
+.colio-theme-white .colio-close span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+
+.colio-theme-white .colio-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.colio-theme-white .colio-close span {
+  background: url(../images/controls.png) no-repeat -48px 0;
+}
+
+.colio-theme-white .colio-close:hover {
+  opacity: 0.8;
+}
+
+/* colio navigation */
+
+
+.colio-theme-white .colio-navigation {
+  position: absolute;
+  top: 35px;
+  right: 40%;
+  left: auto;
+  margin-right: -70px;
+}
+
+.colio-theme-white .colio-navigation span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+
+.colio-theme-white .colio-navigation a {
+  float: left;
+  padding: 5px;
+  margin-right: 5px;
+  background: #d1d1d1;
+  -webkit-transition: background .1s;
+  -moz-transition: background .1s;
+  -o-transition: background .1s;
+  transition: background .1s;
+}
+
+.colio-theme-white .colio-navigation a:hover {
+  background: @brand-primary;
+}
+
+.colio-theme-white .colio-prev span {
+  background: url(../images/controls.png) no-repeat 0 0;
+}
+
+.colio-theme-white .colio-next span {
+  background: url(../images/controls.png) no-repeat -24px 0;
+}
+
+.colio-theme-white .colio-no-prev,
+.colio-theme-white .colio-no-next {
+  background: #ccc!important;
+}
+
+/* content */
+
+.colio-theme-white .side {
+  float: left;
+  width: 60%;
+  padding-right: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.colio-theme-white .main {
+  float: left;
+  width: 40%;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .tools {
+    font-size: 1.4rem;
+
+  }
+}
+
+/* typography */
+
+.colio-theme-white {
+  color: #666;
+}
+
+/*.colio-theme-white a,
+.colio-theme-white a:visited {
+  color: #47dfff;
+  font-weight: bold;
+  text-decoration: none;
+}*/
+
+/*.colio-theme-white a:hover {
+  color: #555;
+}*/
+
+.colio-theme-white .main h3 {
+  padding: 0;
+  margin: 60px 0 14px;
+  color: #555555;
+}
+
+/*.colio-theme-white .visit-link {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}*/
+
+.colio-theme-white .visit-link:after {
+  content: "\2192";
+  position: relative;
+  top: -1px;  
+  margin-left: 5px;
+}
+
+/* flexslider */
+
+.colio-theme-white .flexslider {
+  position: relative;
+  padding: 2px;
+}
+
+.colio-theme-white .flexslider li {
+  padding: 0;
+  margin: 0;
+}
+
+.colio-theme-white .flex-control-nav {
+  float: left;
+  position: relative;
+  left: 50%;
+  margin-top: 15px;
+}
+
+.colio-theme-white .flex-control-nav li {
+  float: left;
+  position: relative;
+  left: -50%;
+  margin: 0 5px;
+  line-height: 0;
+}
+
+.colio-theme-white .flex-control-nav a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #d2d2d2;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-indent: -9999px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.colio-theme-white .flex-control-nav .flex-active {
+  background: #b6b6b6;
+}
+
+.colio-theme-white .flex-direction-nav .flex-prev,
+.colio-theme-white .flex-direction-nav .flex-next {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  text-indent: -9999px;
+  z-index: 10;
+}
+
+.colio-theme-white .flex-direction-nav .flex-next { top: 0; right: 0; }
+.colio-theme-white .flex-direction-nav .flex-prev { top: 0; left: 0; }
+
+/* Retina
+================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .colio-theme-white .colio-prev span {
+    background: url(../images/controls@2x.png) no-repeat 0 0;
+    background-size: 72px 24px;
+  }
+  
+  .colio-theme-white .colio-next span {
+    background: url(../images/controls@2x.png) no-repeat -24px 0;
+    background-size: 72px 24px;
+  }
+  
+  .colio-theme-white .colio-close span {
+    background: url(../images/controls@2x.png) no-repeat -48px 0;
+    background-size: 72px 24px;
+  }
+}
+
+
+/* Media queries
+================================================== */
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .colio { margin-right: 24px!important; }
+    .portfolio .list li { margin: 10px 20px 0 0; }
+  }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    .preview-theme + p { margin-bottom: 42px; }
+    .main-header { margin: 21px 0 0!important; }
+    .purchase { text-align: center; padding-top: 21px; }
+    .portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
+    .portfolio .filters a { margin: 0 10px; }
+    .portfolio .list li { float: none; margin-right: 0; }
+    .colio { margin-right: 0!important; }
+    .portfolio .list .thumb { }
+    footer { text-align: center; margin-bottom: 14px!important; }
+     .colio-theme-white .main, .colio-theme-white .side { clear: both; width: 100%; padding: 0; }
+  .colio-theme-white .side { margin-bottom: 40px; margin-top: 60px; }
+  .colio-theme-white .main { margin-bottom: 0; }
+  .colio-theme-white .colio-navigation { top: 40px; left: 40px; right: auto; }
+  .colio-theme-white .main h3 { margin-top: 0; }
+    
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+    .portfolio .list .thumb { width: 280px; height: 187px; }
+    .colio-theme-white .colio-container { padding: 30px; }
+  .colio-theme-white .colio-navigation { top: 40px; left: 30px; right: auto; }
+  }

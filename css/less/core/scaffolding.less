@@ -1,0 +1,48 @@
+/* Globals
+================================================== */
+body {
+	font-family: @font-family-base;
+	font-size: @font-size-base;
+	line-height: @line-height-base;
+	color: @text-color;
+	background-color: @body-bg;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+	    
+ 
+/* Links
+================================================== */
+	a {
+		color: @link-color;
+		.transition(all 0.3s ease-in-out);
+		&:hover, &:focus {
+			color: @link-hover-color;
+			text-decoration: none;
+		}
+	}
+
+
+/* Helpers
+================================================== */
+.txt-right {
+		text-align: right;
+	}
+	
+.txt-left {
+		text-align: left;
+	}
+.txt-center {
+		text-align: center;
+	}
+
+.inline {
+	display: inline-block;
+}
+
+ul.flush {
+	padding-left: 2rem;
+}

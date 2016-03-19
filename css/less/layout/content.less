@@ -1,0 +1,249 @@
+/*
+* Styles for content
+*/
+
+section {
+	//margin: 2rem 0 0 0;
+}
+
+	/* Hero
+================================================== */
+.hero {
+	background: @body-bg url("../images/bg.png");
+	background-repeat: repeat;
+	//min-height: 12.5rem;
+	.intro {
+		text-align: center;
+		padding: 4rem;
+		p {
+			margin: 0;
+			padding: 1rem 0;
+		}
+	}
+	h2{
+		margin: 0;
+		line-height: 3.2rem;
+		font-weight: 400;
+		em {
+			display: inline-block;
+		}
+	}
+}
+
+
+		
+	/* Section Title
+================================================== */		
+		
+.section-title {
+	  margin-bottom: 2rem;
+	  border-bottom:1px dashed @brand-primary;
+	  text-align:center;
+	  margin-top: 1rem;
+	h2 {
+		position:relative;
+		top:1.5rem;
+		display:inline-block;
+		padding:0 1rem 0 2rem;
+		background: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	h2.test::nth-child(even) {
+		
+		color: #FFF !important;
+		
+	}
+	a{
+		color: @text-color;
+
+		&:hover {
+			color: lighten(@text-color, 25%); 
+		}
+	}
+	.section-title-icon {
+		margin-left: 1rem;
+	}
+}	
+		
+
+/* About
+================================================== */	
+#hero-about{
+	margin: 4rem 0 3rem 0;
+	.hero-about-content {
+		text-align: center;	
+	}
+}
+
+.about-pic-mobile{
+	display: none;
+}
+.about-text {
+	padding-right: 8rem;
+}
+
+.about-list {
+	li {
+		padding: .5rem 0;
+		font-size: 1.4rem;
+	}
+}
+	
+
+@social-size: 30px;
+.social {
+	display: inline-block;
+	padding-left: 3rem;
+	li{
+		a{
+			display: block;
+			color: rgba(255, 255, 255, 1);
+			width: @social-size;
+			height: @social-size;
+			line-height: @social-size;
+			text-align: center;
+			background: @brand-success;
+			border-radius: 50%;
+			.transition(all .3s ease-out);
+		}
+		a.pinterest:hover {
+			background: #AD2D2C;
+		}
+		a.facebook:hover {
+			background: #3B5998;
+		}
+		a.twitter:hover {
+			background: #5DC9F2;
+		}
+		a.linkedin:hover {
+			background: #117FB6;
+		}
+		a.github:hover {
+			background: #000;
+		}
+	}
+}
+
+.contact {
+	padding: 2rem 0;
+	li{
+		text-align: left;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		padding: 0 4rem 0 .5rem;
+		a{
+			font-size: 1.4rem;
+			text-transform: none;
+		}
+		span {
+			display: block;
+		}
+	}
+}
+
+.contact-header {
+	margin-top: 0;
+}
+
+
+/* Info
+================================================== */
+
+.info-content {
+	padding-top: 2rem;
+}
+
+#info {
+	h3 {
+		margin-top: 0;
+	}
+
+	hr{
+		margin-top: 0;
+	}
+}
+
+.info-dev {
+	padding-right: 4rem;
+	border-right: 1px solid @divider;
+}
+
+.info-design{
+	padding-left: 4rem;
+}
+
+.info-design, .info-dev {
+	padding-bottom: 2rem;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 991 (devices and browsers) */
+	@media only screen and (max-width: @screen-sm-max) {
+	
+	
+	 }
+
+	/* Tablet Portrait size 768 to standard 991 (devices and browsers) */
+	@media only screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+	
+	 }
+
+	/* All Mobile Sizes to 767(devices and browser) */
+	@media only screen and (max-width: @screen-xs-max) { 
+		.about-pic-mobile{
+			display: inline-block;
+		}
+		.about-text {
+			padding-right: 15px; //back to bs default
+		}
+
+		.contact {
+
+			li {
+				width: 100%;
+				padding: 0 5px 10px;
+				span{
+					display: inline-block;
+					margin-left: 1rem;
+				}
+			}
+		}
+
+		.info-dev {
+			padding-right: 15px; //back to bs default
+			border-right: none;
+		}
+
+		.info-design{
+			padding-left: 15px; // back to bs default
+		}
+	
+	}
+
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: @screen-xs-min) {
+		.hero {
+			h2 {
+				font-size: 2rem;
+			}
+			.intro {
+				padding: 3rem;
+			}
+		}
+	
+	}
+
+
+
+
+
