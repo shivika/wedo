@@ -317,26 +317,6 @@ $(document).ready(function() {
 	      }
 	    }
 	  });
-
-				// "scrollTop" plugin
-			$.scrollUp();
-			
-			// "colio" plugin
-			var colio_run = function(){
-				$('#work_grid').remove();
-				$('.portfolio .list').colio({
-					id: 'work_grid',
-					theme: 'white',
-					placement: 'before',
-					onContent: function(content){
-						// init "flexslider" plugin
-						$('.flexslider', content).flexslider({slideshow: false, animationSpeed: 300});
-					}
-				});
-			};
-			
-			colio_run();
-						
 			
 
 //jQuery.validator.addMethod('answercheck', function (value, element) {
