@@ -20,16 +20,43 @@
 	<link rel="stylesheet" href="css/vendor.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
 </head>
-<section id="title" class="text-center">
+
+<body id="planner_form">
+  <div class="flower-background">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <a class="navbar-brand" href="index.html"><img src="images/logo-sm.png" alt="" class="header__logo"></a>
+          <ul class="list-unstyled list-inline pull-right">
+            <li><h6>Profile</h6></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+  </div>
+    <section id="title">
     <div class="container">
-            <h2 class="text-center">What do you need?</h2>
+            <h2 class="page-title mb-10">Create a project for your wedding</h2>
+            <p class="mb-20">You'll add one project for each of your needs.</p>
     </div>
 </section>
-<body id="planner_form">
-<form class="form-horizontal" role="form" method="post" action="planner_summary.html">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 mb-40">
+
+<form class="" role="form" method="post" action="planner_summary.html">
     <div class="form-group">
-        <label class="control-label col-sm-4" for="category">Category</label>
-        <div class="col-sm-4">
+        <label class="control-label" for="category">Category</label>
+     
             <select class="form-control"> id="category">
                 <option></option>
                 <option>Favors</option>
@@ -41,51 +68,98 @@
                 <option>Table Settings</option>
                 <option>Custom Requests</option>
             </select>
-        </div>
+
     </div>
     <div class="form-group">
-       <label class="control-label col-sm-4" for="description">Description</label>
-       <div class="col-sm-4">
+       <label class="control-label" for="description">Description</label>
+       
            <textarea class="form-control" rows="3" id="description" placeholder="I'd like pearl pendant necklaces for my bridesmaids"></textarea>
-       </div>
+   
   </div>
  <div class="form-group">
-   <label class="control-label col-sm-4" for="instructions">DIY Instructions</label>
-   <div class="col-sm-4">
+   <label class="control-label " for="instructions">DIY Instructions (if available)</label>
+  
      <input type="url" class="form-control" id="instructions" placeholder="http://">
-   </div>
+   
  </div>
 <div class="form-group">
-    <label class="control-label col-sm-4" for="budget">Budget</label>
-    <div class="input-group col-sm-4" id="budget">
-   <div class="input-group-addon">$</div>
-   <input type="text" class="form-control" id="exampleInputAmount" placeholder="100">
-   <div class="input-group-addon">.00</div>
- </div>
-</div>
-<div class="form-group">
-    <label class="control-label col-sm-4" for="number">Number of Items</label>
-    <div class="col-sm-4">
-   <input type="number" class="form-control" id="number" placeholder="10">
- </div>
-</div>
- <div class="form-group">
-   <label class="control-label col-sm-4" for="date">Due Date</label>
-   <div class="col-sm-4">
-     <input type="date" class="form-control" id="date" placeholder="don't make this too close to your wedding!">
-   </div>
- </div>
- <div class="form-group">
-     <label class="control-label col-sm-4" for="photo">Upload a project photo</label>
-     <div class="col-sm-4">
-     <input type="file" id="photo">
+    <label class="control-label" for="budget">Budget</label>
+   
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
     </div>
+
+</div>
+<div class="form-group">
+    <label class="control-label " for="number">Number of Items</label>
+   
+   <input type="number" class="form-control" id="number" placeholder="10">
+
 </div>
  <div class="form-group">
-   <div class="col-sm-offset-4 col-sm-4">
-     <button type="submit" class="btn btn-primary">Submit</button>
-   </div>
+   <label class="control-label " for="date">Due Date</label>
+
+     <input type="date" class="form-control" id="date" placeholder="don't make this too close to your wedding!">
+
+ </div>
+ <div class="form-group">
+     <label class="control-label" for="photo">Upload a reference photo (if you have one)</label>
+
+     <input type="file" id="photo">
+
+</div>
+ <div class="form-group mt-30">
+
+     <button type="submit" class="btn btn-primary btn-lg">Create a Project</button>
+
  </div>
 </form>
+   </div>
+</div>
+</div>
+  <section id="recent-projects">
+      <div class="container">
+        <div class="row"> 
+          <div class="col-lg-12 text-center">
+            <h2 class="">Recently Completed Projects</h2>
+            <p>We hand pick our makers to ensure that you have the best people working on your wedding. <br>See some of the projects our makers have completed. </p>
+            <span class=""><img src="images/recent-projects.png" alt="" class="mh-a recent-projects-img"></span>
+          </div>
+        
+          </div>
+        </div>
+    </section>
+
+<footer id="footer">
+  <div class="container">
+    <ul class="list-inline social pull-left">
+                <li>
+                    <a href="http://pinterest.com/shivika/" class="pinterest" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/shivika.asthana" class="facebook" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                </li>
+                <li><a href="https://twitter.com/shivasthana/" class="twitter" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+                </li>
+                <li><a href="https://twitter.com/shivasthana/" class="instagram" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+                </li>
+
+            </ul>
+    <ul class="list-inline list-unstyled pull-right c-maroon">
+      <li>FAQs</li>
+      <li>Contact</li>
+      <li>Locations</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+</footer><!-- footer -->
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/w3-include-HTML.js"></script>
 </body>
 </html>
