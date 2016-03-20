@@ -1,0 +1,227 @@
+// ALIGNMENT
+.align-l {
+	text-align: left;
+}
+.align-c {
+	text-align: center;
+}
+.align-r {
+	text-align: right;
+}
+.align-j {
+	text-align: justify;
+}
+.align-m {
+	vertical-align: middle;
+}
+.align-t {
+	vertical-align: top;
+}
+.align-b {
+	vertical-align: baseline;
+}
+.align-v-c{
+  display: table;
+  
+  > *{
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.align-v-m{
+  line-height: 100%; 
+  
+  > *{
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+//HEIGHT & WIDTH
+.h-1 {
+  height: 100%;
+}
+
+.w-1 { 
+  width: 100%; 
+}
+
+// ASPECT
+.aspect-25{
+  padding-top: 25%;
+}
+.aspect-35{
+  padding-top: 35%;
+}
+
+.aspect-45{
+  padding-top: 45%;
+}
+
+.aspect-50{
+  padding-top: 50%;
+}
+.aspect-60{
+  padding-top: 60%;
+}
+
+.aspect-65{
+  padding-top: 65%;
+}
+.aspect-70{
+  padding-top: 70%;
+}
+.aspect-80{
+  padding-top: 80%;
+}
+.aspect-100{
+  padding-top: 100%;
+}
+
+// DISPLAY & POSITIONING
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.static {
+  position: static;
+}
+.block-relative {
+  display: block;
+  position: relative;
+}
+.inline-relative {
+  display: inline-block;
+  position: relative;
+}
+.block-fixed {
+  &:extend(.block);
+  &:extend(.fixed);
+}
+.block-absolute {
+  &:extend(.block);
+  &:extend(.absolute);
+}
+
+.p-tl{
+  top:0;
+  left: 0;
+}
+
+.p-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.p-bm{
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.p-fill{
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.p-tbr{
+  top:0;
+  bottom:0;
+  right:0;
+}
+.offset-t50{
+  top:50%;
+}
+
+.offset-t25{
+  top:25%;
+}
+
+
+// MARGINS
+.mh-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-0 {
+  margin: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mr-0 {
+  margin-right: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-0 {
+  margin-top: 0;
+}
+
+// PADDING
+.px-0 {
+  padding: 0;
+}
+.pl-0 {
+  padding-left: 0;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pt-0 {
+  padding-top: 0;
+}
+
+// Background Cover
+.u-bg-cv {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.u-bg-cv-tc {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.u-bg-cn {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// IMAGES
+[data-src]{
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &.visible{opacity: 1}
+}
+.img{
+  width:100%;
+  height:auto;
+}
+
+.img-circle {
+   border: 5px solid #fff;
+}
