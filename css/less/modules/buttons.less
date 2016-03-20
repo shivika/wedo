@@ -1,3 +1,8 @@
+.btn {
+  font-size: 1.2rem;
+  //text-transform: uppercase;
+  letter-spacing: 1px;
+}
 .btn-default {
 	//border-color: transparent;
 	&:hover{
@@ -21,15 +26,21 @@
 }
 
 .btn-hero{
-  background: transparent;
-  border: #fff 1px solid;
-   &:hover{
-    background-color: @btn-primary-bg;
-  }
+ background: rgba(0, 0, 0, 0);
+    border: #fff 1px solid;
+    padding: 20px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    &:hover {
+    background-color: #fff;
+    color: @brand-primary;
+    }
+    &:first-child {
+      margin-right: 20px;
+    }
 }
 
-.btn {
-	font-size: 1.2rem;
-	//text-transform: uppercase;
-	letter-spacing: 1px;
-}
