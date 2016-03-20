@@ -12,23 +12,21 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-dkGray:			#414042;
-@brand-ltGray:			#aeaaaa; //alt text
-@brand-primary:     	#735d67; //eggplant
-@brand-accent:			#a1c5b5; //teal
-@brand-ltPrimary:		#9b7f79; //mauve
-@brand-success:			#bdbd07; //green
-@brand-paleGreen:		#f5f5ea;
-@brand-xltPrimary:		#EBE6DF; //for text on dark bg.
-@brand-info: 			@brand-accent;
+@grey:			#7e7568;
+@pink-lt:			#BA9294; //alt text
+@maroon:			#520E1D; //teal
+@green-lt:		#BBD970; //mauve
+@green: 	#A19F5A;
+@cream: 	#FCE9CF;
+@brand-success:			@green; //green
+@brand-primary:     @maroon; //eggplant
 @brand-danger:			#a01515;
 @body-bg:               #fff;
 @divider: 				#ddd;
 /* Global text color on `<body>`.*/
-@text-color:            @brand-dkGray;
-@alt-text-color: 		@brand-ltGray;
+@text-color:            @grey;
 /* Global textual link color. */
-@link-color:            @brand-ltPrimary;
+@link-color:            @brand-primary;
 /* Link hover color set via `darken()` function.*/
 @link-hover-color:      darken(@link-color, 20%);
 
@@ -47,7 +45,7 @@
 @font-family-base:        	@font-family-sans-serif;
 
 @headings-font-family:  	@font-family-sans-serif;
-@headings-font-weight:    	600;
+@headings-font-weight:    	400;
 
 // Layout
 // -------------------------
@@ -62,13 +60,3 @@
 @btn-info-color:                 #fff;
 @btn-info-bg:                    @brand-info;
 @btn-info-border:                transparent;
-
-
-// Progress Bar
-// -------------------------
-@progress-bar-bg: 					@brand-paleGreen;
-@progress-bar-success-bg:     	@brand-success;
-
-// Inputs
-// -------------------------
-@input-border-focus:             @brand-ltPrimary;
